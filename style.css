@@ -2,9 +2,12 @@
     padding: 0;
     margin: 0;
 }
+h1, h2, figcaption{
+    font-family: 'Pacifico', cursive;
+}
 header{
 
-    background-color: rgb(133, 0, 27);
+    background-color: rgb(196, 0, 39);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,9 +22,10 @@ header a{
 }
 footer{
     background-color: lightcoral;
+    padding: 20px;
 }
 header button{
-    background-color: cadetblue;
+    background-color: rgb(107, 0, 0);
     color: aliceblue
     padding: 7px 20px;
     border-radius: 25px;
@@ -34,8 +38,9 @@ header button:hover{
 }
 .hero{
     min-height: 75vh;
-    background-image:linear-gradient(to top, #000 , rgba(180, 61, 61, 0.589)) , url(tekstura.jpg);
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.692) , rgba(180, 61, 61, 0.589)) , url(tekstura.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,4 +50,67 @@ header button:hover{
 .hero p{
     max-width: 700px;
     color: aliceblue;
+}
+.pets{
+    padding: 50px 20px;
+    background-color: rgb(119, 0, 0);
+}
+img{
+    max-width: 100%;
+}
+.pets-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+figure{
+    width: 22%;
+    background-color: rgb(219, 86, 86);
+    padding: 40px 20px;
+    position: relative;
+}
+figcaption{
+    position: absolute;
+    bottom: 20px;
+    color: rgb(51, 0, 0);
+    font-size: 20px;
+}
+h1{
+    color: beige;
+}
+@media(max-width: 1014px){
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    nav{
+        margin: 25px 0;
+
+    }
+    nav a{
+        display: block;
+    }
+}
+@media(max-width: 760px){
+      .pets-wrapper{
+          flex-wrap: wrap;
+      }
+      figure{
+          width: 40%;
+          margin-bottom: 20px;
+      }
+}
+@media(max-width: 550px){
+    h1{
+        font-size: 22px;
+    }
+    .hero p{
+    font-size: 18px;
+    }
+    figure{
+        width: 70%;
+    }
+    .pets-wrapper{
+        justify-content: center;
+    }
 }
