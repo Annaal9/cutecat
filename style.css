@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+
+    background-color: rgb(133, 0, 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+} 
+header a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 18px;
+    font-family: Tahoma;
+}
+footer{
+    background-color: lightcoral;
+}
+header button{
+    background-color: cadetblue;
+    color: aliceblue
+    padding: 7px 20px;
+    border-radius: 25px;
+    border: none;
+    transition: 500ms;
+}
+header button:hover{
+    background-color: bisque;
+    transform: scale(1.1)
+}
+.hero{
+    min-height: 75vh;
+    background-image:linear-gradient(to top, #000 , rgba(180, 61, 61, 0.589)) , url(tekstura.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero p{
+    max-width: 700px;
+    color: aliceblue;
+}
